@@ -1,73 +1,182 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
-		<link type="text/css" href="/css/style.css"                                        rel="stylesheet" />
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
 		<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/additional-methods.min.js"></script>
 		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<link type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link type="text/css" href="css/style.css" rel="stylesheet"/>
+		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+
+		<title>Hermes Development</title>
 	</head>
 	<body>
-				<!-- Fixed navbar -->
-		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div class="small-logo-container">
-						<a class="small-logo" href="#">↥Small Logo</a>
+
+		<!--header and navbar-->
+		<header>
+			<nav class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed">
+							<span class="sr-only">Menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapsed">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"><span class="fa fa-paper-plane-o fa-stack-1x"></span></a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="navbar-collapse collapse">
+			</nav>
+		</header>
 
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#">Active</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
+		<!--main-->
+		<main>
+
+			<!-- ========================== -->
+			<!--  Big Logo Section          -->
+			<!-- ========================== -->
+			<section class="parallax" data-stellar-background-ratio="1.5" id="welcome">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="welcome-text col-md-8 col-md-offset-2">
+								<h1>Hermes Development</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="welcome-text col-md-8 col-md-offset-2">
+								<p class="lead">Slogan placeholder text, slogan placeholder text.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ========================== -->
+			<!--  Projects Section          -->
+			<!-- ========================== -->
+			<section class="parallax pattern" data-stellar-background-ratio="0.5" id="projects">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9">
+							<div class="projects-tile">
+								<h3><a href="https://bootcamp-coders.cnm.edu/~aindacochea/farm-to-you/">Farm to You</a></h3>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="projects-tile">
+								<h3><a href="https://needtowatchit.bowtied.io">Need to Watch It</a></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ========================== -->
+			<!--  About Us Section          -->
+			<!-- ========================== -->
+			<section class="parallax pattern" data-stellar-background-ratio="0.5" id="about">
+				<div class="container mugshots">
+					<div class="row">
+						<div class="col-sm-4 col-sm-push-1">
+							<img class="img-circle img-responsive profilepic" src="img/alonso-pic.jpg">
+							<h3 class="name">Alonso Indacochea <a href="https://github.com/aindaco1"><br />
+							<i class="fa fa-github"></i></a>      <a href="https://twitter.com/Alonso_in"><i class="fa fa-twitter"></i>
+							</a>      <a href="https://www.linkedin.com/in/alonsoindacochea">
+							<i class="fa fa-linkedin"></i></a></h3>
+							<p class="area">Developer, film aficionado, dad.</p>
+						</div>
+      				<div class="col-sm-4 col-sm-push-1">
+							<img class="img-circle img-responsive profilepic" src="img/joe-pic.jpg">
+							<h3 class="name">Joe Blow <a href="https://github.com/"><br />
+							<i class="fa fa-github"></i></a>      <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></h3>
+							<p class="area">Just an average Joe.</p>
+						</div>
+						<div class="col-sm-4 col-sm-push-1">
+							<img class="img-circle img-responsive profilepic" src="img/nolte-pic.jpg">
+							<h3 class="name">Nick Nolte <a href="https://github.com/"><br />
+							<i class="fa fa-github"></i></a>      <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></h3>
+							<p class="area">No explanation.</p>
+						</div>
+				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="container-fluid big-logo-row">
+			<!-- ========================== -->
+			<!--  Contact Section           -->
+			<!-- ========================== -->
+			<section class="parallax" data-stellar-background-ratio="0.5" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-8 col-xs-push-2">
+							<div class="well well-sm">
+								<form class="form-horizontal" action="" method="post">
+									<fieldset class="fieldset">
+										<legend class="text-center legend">Let's do business together.</legend>
+
+										<!-- Name input-->
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="name">Name</label>
+											<div class="col-md-9">
+												<input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+											</div>
+										</div>
+
+										<!-- Email input-->
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="email">Email</label>
+											<div class="col-md-9">
+												<input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+											</div>
+										</div>
+
+										<!-- Message body -->
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="message">Message</label>
+											<div class="col-md-9">
+												<textarea class="form-control" id="message" name="message" placeholder="Describe your interest in Hermes Development" rows="10"></textarea>
+											</div>
+										</div>
+
+										<!-- Form actions -->
+										<div class="form-group">
+											<div class="col-md-12 text-right">
+												<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!--footer lives here-->
+		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 big-logo-container">
-						<h1 class="big-logo">↧Big Logo</h1>
-					</div><!--/.col-xs-12 -->
-				</div><!--/.row -->
-			</div><!--/.container -->
-		</div><!--/.container-fluid -->
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 col-md-6 col-sm-8">
-					<h2>Lorem ipsum</h2>
-					<p>Dolor sit amet, consectetur adipisicing elit. Id maxime repellat repellendus porro voluptas laudantium similique eveniet quis perferendis beatae commodi sunt ullam provident dolorum doloribus esse accusamus dolores. Corrupti.</p>
-					<p>Consectetur incidunt voluptatibus ipsa nisi esse eos deleniti repudiandae at quo sit praesentium nemo optio perspiciatis sequi quaerat voluptates minus reprehenderit doloremque accusamus et quisquam nesciunt sunt consequatur explicabo excepturi!</p>
-					<p>Sequi facilis ea dolor asperiores quibusdam eveniet optio corporis et accusantium voluptatem architecto quis iste recusandae molestias dolorem soluta ex blanditiis illo impedit laborum iusto? Iure sapiente eos molestiae est?</p>
-					<p>Numquam delectus recusandae nesciunt rem itaque harum corporis maxime hic iste molestias adipisci excepturi ullam libero necessitatibus cum eum modi minus obcaecati est nemo quia velit earum perferendis consectetur porro?</p>
-					<p>Accusamus dicta consequatur quos ipsum rerum tempora assumenda ex excepturi itaque soluta magnam debitis voluptatibus neque eos porro. Neque tempora ea beatae delectus facere quas voluptas accusamus maxime enim consequuntur.</p>
-					<p>Saepe obcaecati facilis dolore numquam nam quod laudantium. Rerum esse voluptas eum aut porro beatae adipisci exercitationem ab voluptatum corporis quas placeat sapiente nisi ut officia eaque debitis. Corrupti eveniet!</p>
-					<p>Eius natus numquam tempore alias ipsam commodi aut similique corporis beatae velit maxime obcaecati voluptatibus cum repudiandae minus inventore doloremque optio saepe nihil eum reprehenderit quas consequuntur perspiciatis quo quam.</p>
-					<p>Ea perspiciatis incidunt unde ipsam cupiditate necessitatibus magnam quod odit. Beatae adipisci non praesentium tenetur dolores fugit repellat consequuntur unde aperiam eligendi ipsa doloribus corporis officiis ipsam quod numquam assumenda!</p>
-					<p>Ullam ut ex cum corporis numquam quia hic aut nisi itaque laboriosam eaque earum commodi nulla magni voluptate reiciendis laborum esse odit blanditiis aperiam veniam eos velit similique eveniet ad.</p>
-					<p>Esse veritatis inventore explicabo hic consequuntur ex autem praesentium quaerat blanditiis illo deleniti dolorum porro tenetur. Repellat sed repellendus natus cum molestias numquam vitae vel eum voluptatem praesentium tempora quae.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum consequatur odit eius blanditiis sit mollitia ut porro cumque nam repudiandae accusantium nisi excepturi corporis incidunt inventore ipsam? Officiis eum!</p>
-					<p>Nostrum minus dicta quod totam autem ipsum illo velit labore obcaecati est ducimus ullam sit iusto ea pariatur sint nulla perferendis modi dolorum cumque non laboriosam ratione maiores possimus numquam!</p>
-					<p>Deserunt ex dolor atque sapiente suscipit aspernatur et iste necessitatibus enim magni blanditiis quaerat rerum perspiciatis expedita magnam nihil neque natus quos quidem veritatis eligendi dolorem itaque laboriosam beatae dolores!</p>
-					<p>Nostrum tenetur rem cum tempora sapiente at possimus assumenda ex quos illum facilis quibusdam facere voluptatum. Necessitatibus tempore animi earum inventore quaerat sit velit totam rem nulla consequuntur dolorem architecto!</p>
-					<p>Illum doloremque ipsa magni fugiat explicabo nam officiis expedita architecto voluptatem beatae deserunt optio iusto nostrum facere voluptatum. Tempora dolore quasi vero aut voluptatem eaque nobis iusto enim dignissimos molestias!</p>
-				</div><!--/.col-xs-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
+					<div class="col-xs-12">
+						<p class="pull-right clearfix">&copy;&nbsp;2015 Alonso Indacochea</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
+</html>
