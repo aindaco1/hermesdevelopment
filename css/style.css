@@ -177,10 +177,17 @@ section.pattern {
 
 #about h3 {
 	color: #ffffff;
+	text-align: center;
 }
 
 #about p {
 	color: #ffffff;
+	text-align: center;
+}
+
+.profilepic {
+	margin: 0 auto;
+
 }
 
 /********************************************
