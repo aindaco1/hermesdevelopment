@@ -87,6 +87,22 @@ hr {
 	background-color: #fff;
 }
 
+.navbar-nav li a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+.fa-stack-1x {
+	text-align: right;
+	position: relative;
+}
+
+
+.fa-stack-2x {
+	left: -15px;
+}
+
 /********************************************
 * Content Base Styles
 ********************************************/
@@ -108,7 +124,6 @@ section.pattern {
 #welcome {
 	background-image: url("../img/universe2.jpg");
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	/*min-height: 750px;*/
 	padding: 200px 0 100px;
 	text-align: center;
 }
@@ -116,54 +131,101 @@ section.pattern {
 @media (min-width: 400px) {
 	#welcome {
 		min-height: 250px;
-		padding: 50px 0 0;
+		padding: 200px 0 400px;
 	}
 }
 @media (min-width: 440px) {
 	#welcome {
 		min-height: 300px;
-		padding: 50px 0 0;
+		padding: 200px 0 400px;
 	}
 }
 @media (min-width: 500px) {
 	#welcome {
 		min-height: 350px;
-		padding: 50px 0 0;
+		padding: 200px 0 400px;
 	}
 }
 @media (min-width: 630px) {
 	#welcome {
-		min-height: 4500px;
-		padding: 50px 0 0;
+		min-height: 550px;
+		padding: 200px 0 400px;
 	}
 }
-@media (min-width: 768px) {
-	#welcome {
-		min-height: 600px;
-		padding: 50px 0 0;
-	}
-}
-@media (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 	#welcome {
 		min-height: 750px;
 		padding: 200px 0 100px;
 	}
 }
 
+.white {
+	background-color: white;
+	padding: 30px 30px;
+	text-align: center;
+}
 /********************************************
 * Project Section Styles
 ********************************************/
 #projects {
 	background-image: url("../img/pattern.png");
-	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	padding: 100px 0;
+	box-shadow: 0 0 0 rgba(0,0,0,0.8);
+	padding: 250px 0 250px;
 }
 
-.projects-tile {
-	background: none repeat scroll 0 0 #fff;
-	height: 150px;
+@media screen and (max-width: 768px) {
+	#projects {
+		padding: 100px 0 100px;
+
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.need {
+		margin-left: -45px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.farm {
+		margin-left: 25px;
+	}
+}
+
+.projects-tile-farm {
+	background-image: url("../img/farm-to-you.jpg");
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: thick;
+	height: 550px;
+	max-width: 80em;
 	padding: 20px;
 	margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+	.projects-tile-farm {
+		background-image: url("../img/farm-to-you-mobile.jpg");
+		height: 340px;
+		width: 100%;
+	}
+}
+
+.projects-tile-need {
+	background-image: url("../img/need.jpg");
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: thick;
+	height: 390px;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+	.projects-tile-need {
+		background-image: url("../img/need-mobile.jpg");
+		height: 320px;
+		width: 100%;
+	}
 }
 
 /********************************************
@@ -171,8 +233,15 @@ section.pattern {
 ********************************************/
 #about {
 	background-image: url("../img/pattern2.png");
-	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	padding: 100px 0;
+	box-shadow: 0 0 0 rgba(0,0,0,0.8);
+	padding: 250px 0 250px;
+}
+
+@media screen and (max-width: 768px) {
+	#about {
+		padding: 100px 0 100px;
+
+	}
 }
 
 #about h3 {
@@ -187,22 +256,41 @@ section.pattern {
 
 .profilepic {
 	margin: 0 auto;
+}
 
+@media screen and (min-width: 768px) {
+	.about-us {
+		margin-right: 200px !important;
+	}
 }
 
 /********************************************
 * Contact Section Styles
 ********************************************/
 #contact {
-	background-image: url("../img/universe.jpg");
-	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	padding: 50px 0;
+	background-image: url("../img/universe2.jpg");
+	padding: 250px 0 250px;
+}
+
+@media screen and (max-width: 768px) {
+	#contact {
+		padding: 100px 0 100px;
+	}
+}
+
+.contact {
+	color: #ffffff;
+	background-color: transparent;
+	border: transparent;
 }
 
 .img-circle {
 	align-content: center;
 	width: 90px;
 	height: 150px;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: thick;
 }
 
 .fa {
@@ -211,51 +299,31 @@ section.pattern {
 
 .fieldset {
 	background-color: transparent !important;
+	color: #ffffff;
 }
 
-.well {
-	background-color: transparent;
-}
-
-@media (min-width: 400px) {
-	.legend {
-		color: #000000;
-	}
-}
-
-@media (min-width: 440px) {
-	.legend {
-		color: #000000;
-	}
-}
-
-@media (min-width: 500px) {
-	.legend {
-		color: #000000;
-	}
-}
-
-@media (min-width: 630px) {
-	.legend {
-		color: #000000;
-	}
-}
-
-@media (min-width: 768px) {
-	.legend {
-		color: white;
-	}
-}
-
-@media (min-width: 1200px) {
-	.legend {
-		color: white;
-	}
+.legend {
+	border-color: transparent;
+	color: white;
 }
 
 .mugshots {
 	align-content: center;
 }
+
+@media screen and (min-width: 768px) {
+	.contacts {
+		margin-right: 240px !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.output {
+		width: 658px;
+		margin-left: 243px !important;
+	}
+}
+
 /********************************************
 * Footer Styles
 ********************************************/

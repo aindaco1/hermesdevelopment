@@ -22,7 +22,7 @@
 		<!--header and navbar-->
 		<header>
 			<nav class="navbar navbar-fixed-top">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed">
 							<span class="sr-only">Menu</span>
@@ -31,9 +31,12 @@
 							<span class="icon-bar"></span>
 						</button>
 					</div>
+
+
 					<div class="collapse navbar-collapse" id="navbar-collapsed">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#"><span class="fa fa-paper-plane-o fa-stack-1x"></span></a></li>
+							<li class="hidden-xs"><a href="#"><span class="fa fa-paper-plane-o fa-stack-1x"></span></a></li>
+							<li><a href="#projects">Projects</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
@@ -49,7 +52,7 @@
 			<!--  Big Logo Section          -->
 			<!-- ========================== -->
 			<section class="parallax" data-stellar-background-ratio="1.5" id="welcome">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="welcome-text col-md-8 col-md-offset-2">
@@ -60,39 +63,45 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="welcome-text col-md-8 col-md-offset-2">
-								<p class="lead">Slogan placeholder text, slogan placeholder text.</p>
+								<p class="lead">Delivering your message to customers, one website at a time.</p>
 							</div>
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<section class="parallax pattern white" data-stellar-background-ratio="0.5">
+				<h3>Projects</h3>
 			</section>
 
 			<!-- ========================== -->
 			<!--  Projects Section          -->
 			<!-- ========================== -->
 			<section class="parallax pattern" data-stellar-background-ratio="0.5" id="projects">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-9">
-							<div class="projects-tile">
-								<h3><a href="https://bootcamp-coders.cnm.edu/~aindacochea/farm-to-you/">Farm to You</a></h3>
+						<div class="col-md-9 farm">
+							<div class="projects-tile-farm" onclick="window.open('https://bootcamp-coders.cnm.edu/~aindacochea/farm-to-you/');" target="_blank">
 							</div>
 						</div>
-						<div class="col-md-3">
-							<div class="projects-tile">
-								<h3><a href="https://needtowatchit.bowtied.io">Need to Watch It</a></h3>
+						<div class="col-md-3 need">
+							<div class="projects-tile-need" onclick="window.open('https://needtowatchit.bowtied.io/');" target="_blank">
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
+			<section class="parallax pattern white" data-stellar-background-ratio="0.5">
+				<h3>About Us</h3>
+			</section>
+
 			<!-- ========================== -->
 			<!--  About Us Section          -->
 			<!-- ========================== -->
 			<section class="parallax pattern" data-stellar-background-ratio="0.5" id="about">
-				<div class="container mugshots">
-					<div class="row">
+				<div class="container-fluid mugshots">
+					<div class="row about-us">
 						<div class="col-sm-4 col-sm-push-1">
 							<img class="img-circle img-responsive profilepic" src="img/alonso-pic.jpg">
 							<h3 class="name">Alonso Indacochea <a href="https://github.com/aindaco1"><br />
@@ -117,19 +126,24 @@
 			</div>
 		</section>
 
+			<section class="parallax pattern white" data-stellar-background-ratio="0.5">
+				<h3>Contact</h3>
+			</section>
+
 			<!-- ========================== -->
 			<!--  Contact Section           -->
 			<!-- ========================== -->
 			<section class="parallax" data-stellar-background-ratio="0.5" id="contact">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-8 col-xs-push-2">
-							<div class="well well-sm">
-								<form class="form-horizontal" action="" method="post">
+						<div class="col-xs-8 col-xs-push-2 contact">
+							<!--<div class="well well-sm">-->
+								<form class="form-horizontal" id="controller" action="index-controller.php" method="post">
 									<fieldset class="fieldset">
 										<legend class="text-center legend">Let's do business together.</legend>
-
+									</fieldset>
 										<!-- Name input-->
+									<div class="form-group contacts">
 										<div class="form-group">
 											<label class="col-md-3 control-label" for="name">Name</label>
 											<div class="col-md-9">
@@ -156,21 +170,23 @@
 										<!-- Form actions -->
 										<div class="form-group">
 											<div class="col-md-12 text-right">
-												<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+												<button type="submit" class="btn btn-primary btn-md">Send</button>
 											</div>
 										</div>
-									</fieldset>
+										<div class="form-group output">
+											<p id="outputArea"></p>
+										</div>
+									</div>
 								</form>
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
 		</main>
 
 		<!--footer lives here-->
 		<footer class="footer">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
 						<p class="pull-right clearfix">&copy;&nbsp;2015 Alonso Indacochea</p>
