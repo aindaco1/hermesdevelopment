@@ -9,7 +9,7 @@ $(document).ready(function() {
 	});
 
 	/********************************************
-	 * Change nav bar on scroll
+	 * Change navbar on scroll
 	 ********************************************/
 	$(window).on('scroll', function() {
 
@@ -21,7 +21,19 @@ $(document).ready(function() {
 		}
 	});
 
-	// tell the validator to validate this form (by id)
+	/********************************************
+	 * Collapse navbar after selection
+	 ********************************************/
+	$(document).on('click.nav','.navbar-collapse.in',function(e) {
+		if( $(e.target).is('a') ) {
+			$(this).removeClass('in').addClass('collapse');
+		}
+	});
+
+	/********************************************
+	 * Validation
+	 ********************************************/
+		// tell the validator to validate this form (by id)
 	$("#controller").validate({
 		// setup the formatting for the errors
 		errorClass: "label-danger",
