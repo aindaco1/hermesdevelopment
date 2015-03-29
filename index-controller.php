@@ -8,16 +8,16 @@ try {
 	}
 
 	$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-	if($name === "") {
-		$name = "Shitbag";
+	if($name === "" || strpos($_POST['name'], "&lt;script&gt;") !== false) {
+		$name = "Shitbag at " . $_SERVER['REMOTE_ADDR'];
 	}
 
 	$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 	$email = filter_var($email, FILTER_VALIDATE_EMAIL);
 
 	$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-	if($message === "") {
-		$message = "Someone is trying to fuck with you guys.";
+	if($message === "" || strpos($_POST['message'], "&lt;script&gt;") !== false) {
+		$message = "Someone is trying to fuck with you guys. Check the following IP address: " . $_SERVER['REMOTE_ADDR'];
 	}
 
 	// email the user with an activation message

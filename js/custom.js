@@ -31,6 +31,34 @@ $(document).ready(function() {
 	});
 
 	/********************************************
+	 * Scroll effect on hash
+	 ********************************************/
+	$('a[href^="#"]').on('click',function (e) {
+		e.preventDefault();
+
+		var target = this.hash;
+		var $target = $(target);
+		var scrollTo = $target.offset().top - 175;
+
+		$('html, body').stop().animate({
+			'scrollTop': scrollTo
+		}, 900, 'swing');
+	});
+
+	$('a[href^="#top"]').on('click',function (e) {
+		e.preventDefault();
+
+		var target = this.hash;
+		var $target = $(target);
+		var scrollTo = $target.offset().top;
+
+		$('html, body').stop().animate({
+			'scrollTop': scrollTo
+		}, 900, 'swing');
+	});
+
+
+	/********************************************
 	 * Validation
 	 ********************************************/
 		// tell the validator to validate this form (by id)

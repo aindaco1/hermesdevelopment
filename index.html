@@ -17,25 +17,15 @@
 
 		<title>Hermes Development</title>
 	</head>
-	<body>
+	<body id="top">
 
 		<!--header and navbar-->
 		<header>
 			<nav class="navbar navbar-fixed-top">
 				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed">
-							<span class="sr-only">Menu</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-
-
-					<div class="collapse navbar-collapse" id="navbar-collapsed">
+					<div>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="hidden-xs"><a href="#"><span class="fa fa-paper-plane-o fa-stack-1x"></span></a></li>
+							<li><a href="#top">Home</a></li>
 							<li><a href="#projects">Projects</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#contact">Contact</a></li>
@@ -80,12 +70,17 @@
 			<section class="parallax pattern border-left-right" data-stellar-background-ratio="0.5" id="projects">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-sm-8 cursor">
-							<div class="projects-tile-farm border-thick" onclick="window.open('https://bootcamp-coders.cnm.edu/~aindacochea/farm-to-you/');" target="_blank">
+						<div class="col-sm-8">
+							<div class="projects-tile-farm">
+								<img class="img-responsive border-thick hidden-xs cursor" onclick="window.open('http://farmtoyou.me/');" target="_blank" src="img/farm-to-you.jpg">
+								<img class="img-responsive border-thick visible-xs cursor" onclick="window.open('http://farmtoyou.me/');" target="_blank" src="img/farm-to-you-mobile.jpg">
+								<p><h2 class="cursor">Farm to You, an online marketplace for local agricultural goods</h2></p>
 							</div>
 						</div>
-						<div class="col-sm-4 cursor">
-							<div class="projects-tile-need border-thick" onclick="window.open('https://needtowatchit.bowtied.io/');" target="_blank">
+						<div class="col-sm-4">
+							<div class="projects-tile-need">
+								<img class="img-responsive border-thick cursor" onclick="window.open('http://jordyn.aandbae.com/');" target="_blank" src="img/jordyn.jpg">
+								<p><h3 class="cursor">Art portfolio for Jordyn Bernicke</h3></p>
 							</div>
 						</div>
 					</div>
@@ -102,7 +97,7 @@
 			<section class="parallax pattern border-left-right" data-stellar-background-ratio="0.5" id="about">
 				<div class="container-fluid mugshots">
 					<div class="row about-us">
-						<div class="col-sm-4 col-sm-push-1">
+						<div class="col-sm-4">
 							<img class="img-circle img-responsive profilepic" src="img/alonso-pic.jpg">
 							<h3 class="name">Alonso Indacochea <a href="https://github.com/aindaco1"><br />
 							<i class="fa fa-github"></i></a> <a href="https://twitter.com/Alonso_in"><i class="fa fa-twitter"></i>
@@ -110,15 +105,15 @@
 							<i class="fa fa-linkedin"></i></a></h3>
 							<p class="area">Developer, film aficionado, dad.</p>
 						</div>
-      				<div class="col-sm-4 col-sm-push-1">
+      				<div class="col-sm-4">
 							<img class="img-circle img-responsive profilepic" src="img/placeholder.svg">
-							<h3 class="name">TBD <a href="https://github.com/"><br />
+							<h3 class="name">Florian Goussin <a href="https://github.com/flogo1982"><br />
 							<i class="fa fa-github"></i></a> <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></h3>
 							<p class="area"></p>
 						</div>
-						<div class="col-sm-4 col-sm-push-1">
+						<div class="col-sm-4">
 							<img class="img-circle img-responsive profilepic" src="img/placeholder.svg">
-							<h3 class="name">TBD <a href="https://github.com/"><br />
+							<h3 class="name">Jay Renteria <a href="https://github.com/JayRenteria"><br />
 							<i class="fa fa-github"></i></a> <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></h3>
 							<p class="area"></p>
 						</div>
@@ -136,12 +131,14 @@
 			<section class="parallax border-left-right" data-stellar-background-ratio="0.5" id="contact">
 				<div class="container-fluid">
 					<div class="row contact">
+						<div class="col-xs-12">
+							<fieldset class="fieldset">
+								<legend class="text-center big legend">Let's do business together.</legend>
+							</fieldset>
+						</div>
 						<div class="col-xs-pull-1 col-xs-10 col-xs-push-1 center">
 							<!--<div class="well well-sm">-->
 								<form class="form-horizontal" id="controller" action="index-controller.php" method="post">
-									<fieldset class="fieldset">
-										<legend class="text-center big legend">Let's do business together.</legend>
-									</fieldset>
 										<!-- Name input-->
 									<div class="form-group contacts">
 										<div class="form-group">
@@ -190,7 +187,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
-						<p class="pull-right clearfix">&copy;&nbsp;2015 Alonso Indacochea</p>
+						<p class="pull-right clearfix">&copy;&nbsp;2015 Hermes Development</p>
 					</div>
 				</div>
 			</div>
